@@ -1,8 +1,6 @@
 import React from "react";
 
-interface Props {}
-
-const Bottom: React.FC<Props> = () => {
+const Bottom: React.FC = () => {
   return (
     <div>
       <footer className="font-sans bg-primary font-normal text-center text-sm text-white md:text-base md:py-1">

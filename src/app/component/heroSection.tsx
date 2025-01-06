@@ -1,10 +1,7 @@
 "use client";
-
 import React from "react";
 
-interface Props {}
-
-const HeroSection: React.FC<Props> = () => {
+const HeroSection: React.FC = () => {
   const scrollToForm = () => {
     const formElement = document.getElementById("form");
     if (formElement) {

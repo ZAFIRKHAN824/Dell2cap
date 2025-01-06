@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "./component/heroSection";
 import UserForm from "./component/userForm";
 import Bottom from "./component/bottom";
