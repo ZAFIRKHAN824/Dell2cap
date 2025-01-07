@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Navis-Investment-group",
-  description: "...",
+  title: "Navis Investment Group",
+  description: "We are a global investment management firm.",
+  icons: "small_log.png",
 };
 
 export default function RootLayout({
