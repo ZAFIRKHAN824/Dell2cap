@@ -109,7 +109,7 @@ export async function POST(req: Request) {
   });
 
   await send({
-    to: "zafirkhan824@gmail.com",
+    to: "Contact@navisinvestmentgroup.com",
     template: sibTemplates.authentication.inviteUser(rawBody),
   });
   return NextResponse.json(
