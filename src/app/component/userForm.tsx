@@ -9,7 +9,7 @@ interface FieldData {
   companyName: string;
   investorType: string;
   companyAum: string;
-  captcha: boolean;
+  captcha: string;
 }
 
 const UserForm: React.FC = () => {
@@ -20,7 +20,7 @@ const UserForm: React.FC = () => {
     companyName: "",
     investorType: "",
     companyAum: "",
-    captcha: false,
+    captcha: "",
   });
 
   const handleChange = useCallback(
@@ -35,11 +35,10 @@ const UserForm: React.FC = () => {
     []
   );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", fieldData);
 
-    fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
+    await fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
       redirect: "follow",
       method: "POST",
       body: JSON.stringify([
@@ -52,6 +51,13 @@ const UserForm: React.FC = () => {
       ]),
       headers: {
         "Content-Type": "text/plain;charset=utf-8",
+      },
+    });
+    await fetch("/api/sendEmail", {
+      method: "POST",
+      body: JSON.stringify(fieldData),
+      headers: {
+        "Content-Type": "application/json",
       },
     });
   };
@@ -75,7 +81,6 @@ const UserForm: React.FC = () => {
             please inquire here.
           </p>
         </div>
-
         {/* Name Input */}
         <div>
           <label
@@ -95,7 +100,6 @@ const UserForm: React.FC = () => {
             onChange={handleChange}
           />
         </div>
-
         {/* Email Input */}
         <div>
           <label
@@ -115,7 +119,6 @@ const UserForm: React.FC = () => {
             onChange={handleChange}
           />
         </div>
-
         {/* Number Input */}
         <div>
           <label
@@ -135,7 +138,6 @@ const UserForm: React.FC = () => {
             onChange={handleChange}
           />
         </div>
-
         {/* Company Name Input */}
         <div>
           <label
@@ -155,7 +157,6 @@ const UserForm: React.FC = () => {
             onChange={handleChange}
           />
         </div>
-
         {/* Investor Type Dropdown */}
         <div>
           <label
@@ -184,11 +185,27 @@ const UserForm: React.FC = () => {
             <option disabled value="">
               Which type of investor are you?
             </option>
-            <option value="abc">abc</option>
-            <option value="xyz">xyz</option>
+            <option value="Advisor / Consultant">Advisor / Consultant</option>
+            <option value="Endowment / Foundation">
+              Endowment / Foundation
+            </option>
+            <option value="Fund of Funds Manager">Fund of Funds Manager</option>
+            <option value="Insurance Company">Insurance Company</option>
+            <option value="Outsourced CIO">Outsourced CIO</option>
+            <option value="Multi-Family Office">Multi-Family Office</option>
+            <option value="Private Bank">Private Bank</option>
+            <option value="Private Sector Pension Fund">
+              {" "}
+              Private Sector Pension Fund
+            </option>
+            <option value="Public Pension Fund">Public Pension Fund</option>
+            <option value="Single Family Office">Single Family Office</option>
+            <option value="Sovereign Wealth Fund">Sovereign Wealth Fund</option>
+            <option value=" Superannuation Scheme">
+              Superannuation Scheme
+            </option>
           </select>
         </div>
-
         {/* Company AUM Dropdown */}
         <div>
           <label
@@ -217,13 +234,17 @@ const UserForm: React.FC = () => {
             <option disabled value="">
               Input your company AUM
             </option>
-            <option value="abc">abc</option>
-            <option value="xyz">xyz</option>
+            <option value="<$1bn">$1bn</option>
+            <option value="$1-5bn">$1-5bn</option>
+            <option value="$5-10bn">$5-10bn</option>
+            <option value="$10-25bn">$10-25bn</option>
+            <option value="$25-100bn">$25-100bn</option>
+            <option value="$100bn+">$100bn+</option>
           </select>
         </div>
         <div>
           <label
-            htmlFor="companyName"
+            htmlFor="captcha"
             className="block text-sm font-semibold text-primary-dark"
           ></label>
           <HCaptcha

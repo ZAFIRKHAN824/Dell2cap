@@ -12,7 +12,7 @@ const Bottom: React.FC = () => {
           </div>
           <div className="px-16 py-6">
             <a
-              href="/TermCondition.html"
+              href="/terms-of-use.pdf"
               className="text-white  mx-4"
               target="_blank"
               rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Bottom: React.FC = () => {
             </a>
             |
             <a
-              href="/TermCondition.html"
+              href="/privacy-policy.pdf"
               className="text-white  mx-4"
               target="_blank"
               rel="noopener noreferrer"
@@ -30,8 +30,8 @@ const Bottom: React.FC = () => {
             </a>
             |
             <a
-              href="/TermCondition.html"
-              className="text-white  mx-4"
+              href="/cpra-website-notice.pdf"
+              className="text-white mx-4"
               target="_blank"
               rel="noopener noreferrer"
             >
