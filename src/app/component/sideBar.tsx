@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SideBar: React.FC<Props> = () => {
+const SideBar: React.FC = () => {
   // State to control sidebar visibility
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

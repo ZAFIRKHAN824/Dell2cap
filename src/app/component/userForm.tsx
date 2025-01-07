@@ -112,7 +112,7 @@ const UserForm: React.FC = () => {
             htmlFor="number"
             className="block text-sm font-semibold text-primary-dark"
           >
-            Whatsapp Number:
+            Number:
           </label>
           <input
             required
