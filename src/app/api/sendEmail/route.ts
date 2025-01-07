@@ -17,7 +17,6 @@ const apiInstance = () => {
   }
   return _apiInstance;
 };
-
 const send = async ({
   to,
   toName,
@@ -44,7 +43,6 @@ const send = async ({
   cc?: SibApiV3Sdk.SendSmtpEmailCc[];
 }) => {
   const smtpEmail = new SibApiV3Sdk.SendSmtpEmail();
-
   smtpEmail.sender = new SibApiV3Sdk.SendSmtpEmailSender();
   smtpEmail.sender.name = fromName;
   smtpEmail.sender.email = from;
