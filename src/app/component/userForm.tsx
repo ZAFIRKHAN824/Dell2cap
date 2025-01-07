@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import Thankyou from "./thankyou";
 
