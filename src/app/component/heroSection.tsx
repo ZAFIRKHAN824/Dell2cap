@@ -11,7 +11,10 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className=" min-h-screen relative w-full lg:min-h-screen bg-primary-light px-10 sm:px-24 ">
+    <div
+      id="heroSection"
+      className=" min-h-screen relative w-full lg:min-h-screen bg-primary-light px-10 sm:px-24 "
+    >
       {/* Logo Section */}
       <div className="flex flex-wrap justify-between items-center py-10 ">
         <div className="">

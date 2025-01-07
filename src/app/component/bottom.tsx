@@ -43,7 +43,8 @@ const Bottom: React.FC = () => {
               </a>
             </div>
             <div className="mt-2">
-              Copyright © Navis Investment Group LLC 2025 | All rights reserved.
+              Copyright © Navis Investment Group LLC {new Date().getFullYear()}{" "}
+              | All rights reserved.
             </div>
           </div>
         </div>
