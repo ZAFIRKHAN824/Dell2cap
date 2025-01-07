@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full lg:min-h-screen bg-primary-light bg-[url('/Second-background.jpg')] bg-cover bg-center">
+    <div className="relative w-full lg:min-h-screen bg-primary-light ">
       <div className="absolute top-6 right-10"></div>
       {/* Logo Section */}
       <div className="flex flex-wrap justify-between items-center px-24 py-10 ">
