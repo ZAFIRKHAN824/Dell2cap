@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       {/* Logo Section */}
       <div className="flex flex-wrap justify-between items-center px-24 py-10 ">
         <img
-          src="navis-logo.png"
+          src="/navis-logo.png"
           alt="Logo"
           className="w-[80px] h-[80px] mt-4 md:w-[250px] md:h-[80px]"
         />
