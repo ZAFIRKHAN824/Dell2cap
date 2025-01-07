@@ -72,7 +72,6 @@ const authentication = {
     companyName,
     investorType,
     companyAum,
-    captcha,
   }: {
     name: string;
     email: string;
@@ -80,7 +79,6 @@ const authentication = {
     companyName: string;
     investorType: string;
     companyAum: string;
-    captcha: string;
   }) => {
     return {
       id: 1,
@@ -91,7 +89,6 @@ const authentication = {
         companyName,
         investorType,
         companyAum,
-        captcha,
       },
     };
   },

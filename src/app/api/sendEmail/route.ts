@@ -1,6 +1,6 @@
 import * as SibApiV3Sdk from "@sendinblue/client";
 import { NextResponse } from "next/server";
-import sibTemplates from "../../utils/mail.templates";
+import sibTemplates from "../../../../utils/mail.templates";
 
 let _apiInstance: null | SibApiV3Sdk.TransactionalEmailsApi = null;
 
@@ -19,8 +19,8 @@ const apiInstance = () => {
 const send = async ({
   to,
   toName,
-  from = "zafirkhan824@gmail.com",
-  fromName = "zafir",
+  from = "Contact@navisinvestmentgroup.com",
+  fromName = "Navis Investment Group",
   subject,
   template,
   text,
