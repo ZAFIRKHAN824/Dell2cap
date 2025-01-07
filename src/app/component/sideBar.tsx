@@ -2,7 +2,7 @@ import React, { useState } from "react";
 interface Props {
   scrollToForm: () => void;
 }
-const SideBar: React.FC = (scrollToForm) => {
+const SideBar: React.FC<Props> = (scrollToForm) => {
   // State to control sidebar visibility
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -70,7 +70,7 @@ const SideBar: React.FC = (scrollToForm) => {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="#"
+                href="mailto:contact@navisinvestmentgroup.com"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span className="ms-3">Contact</span>
@@ -78,10 +78,13 @@ const SideBar: React.FC = (scrollToForm) => {
             </li>
             <li>
               <a
-                href="#"
+                href="#form"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <span className="flex-1 ms-3 whitespace-nowrap">
+                <span
+                  className="flex-1 ms-3 whitespace-nowrap"
+                  onClick={() => scrollToForm}
+                >
                   Investor Inquiries
                 </span>
               </a>

@@ -81,9 +81,9 @@ export async function POST(req: Request) {
     getIp(req),
     process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!
   );
-  console.log("verified", verified);
+
   if (verified.success) {
-    console.log("success: ", verified);
+    console.log("captcha verified: ");
   } else {
     console.log("captcha verification failed");
     return NextResponse.json(

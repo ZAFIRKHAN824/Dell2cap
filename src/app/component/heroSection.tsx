@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
 
         <div className="md:text-lg text-base text-primary-dark flex flex-col md:flex-row justify-end items-center ">
           <div className="block sm:hidden">
-            <SideBar />
+            <SideBar scrollToForm={scrollToForm} />
           </div>
           <div className="hidden sm:block">
             <a

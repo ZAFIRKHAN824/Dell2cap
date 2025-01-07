@@ -10,7 +10,7 @@ const Bottom: React.FC = () => {
             <div className=" mb-2"> abc New York, NY 10022</div>
             <div>
               <a href="mailto:Contact@navisinvestmentgroup.com">
-                Contact@navisinvestmentgroup.com
+                contact@navisinvestmentgroup.com
               </a>
             </div>
 
