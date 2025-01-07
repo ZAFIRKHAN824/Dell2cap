@@ -38,21 +38,6 @@ const UserForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
-        redirect: "follow",
-        method: "POST",
-        body: JSON.stringify([
-          fieldData.name,
-          fieldData.email,
-          fieldData.number,
-          fieldData.companyName,
-          fieldData.investorType,
-          fieldData.companyAum,
-        ]),
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8",
-        },
-      });
       await fetch("/api/sendEmail", {
         method: "POST",
         body: JSON.stringify(fieldData),
@@ -251,7 +236,9 @@ const UserForm: React.FC = () => {
           ></label>
           <HCaptcha
             sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!}
-            onVerify={(token) => console.log("Captcha token:", token)}
+            onVerify={(token) =>
+              setFieldData((prevState) => ({ ...prevState, captcha: token }))
+            }
           />
         </div>
 

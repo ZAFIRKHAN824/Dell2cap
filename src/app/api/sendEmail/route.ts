@@ -1,6 +1,8 @@
 import * as SibApiV3Sdk from "@sendinblue/client";
 import { NextResponse } from "next/server";
 import sibTemplates from "../../../../utils/mail.templates";
+import { verify } from "hcaptcha";
+import { getIp } from "../../../../utils/misc";
 
 let _apiInstance: null | SibApiV3Sdk.TransactionalEmailsApi = null;
 
@@ -72,6 +74,37 @@ export async function POST(req: Request) {
   const rawBody = await req.json();
   delete rawBody.agree;
   console.log("req: ", rawBody);
+
+  const verified = await verify(
+    process.env.HCAPTCHA_SECRET!,
+    rawBody.captcha,
+    getIp(req),
+    process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!
+  );
+  console.log("verified", verified);
+  if (verified.success) {
+    console.log("success: ", verified);
+  } else {
+    console.log("success: ", verified);
+    return false;
+  }
+
+  await fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
+    redirect: "follow",
+    method: "POST",
+    body: JSON.stringify([
+      rawBody.name,
+      rawBody.email,
+      rawBody.number,
+      rawBody.companyName,
+      rawBody.investorType,
+      rawBody.companyAum,
+    ]),
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8",
+    },
+  });
+
   await send({
     to: "zafirkhan824@gmail.com",
     template: sibTemplates.authentication.inviteUser(rawBody),
