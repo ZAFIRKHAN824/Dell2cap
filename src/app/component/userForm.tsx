@@ -73,7 +73,7 @@ const UserForm: React.FC = () => {
       ) : (
         <div
           id="form"
-          className="flex items-center justify-center bg-primary-dark p-4 sm:p-10"
+          className="flex items-center justify-center bg-primary-dark p-4 py-10 sm:p-10"
         >
           <form
             onSubmit={handleSubmit}

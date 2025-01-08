@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/Navis-logo.png"
             alt="Logo"
-            className="w-[250px]  md:w-[350px] "
+            className="w-[200px]  md:w-[300px] lg:w-[350px]"
           />
         </div>
 
@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className=" text-4xl md:text-4xl justify-start  flex mt-32 md:mt-20 flex-wrap gap-10 items-center lg:justify-between ">
+      <div className=" text-4xl  justify-start  flex mt-[20vh] flex-wrap gap-10 items-center lg:justify-between ">
         {/* Content Section */}
         <div className="text-primary-dark order-2  lg:order-1 w-[300px]  md:w-[500px]  sm:ml-0  flex flex-col gap-14 md:gap-10 justify-center items-start ">
           <div className="   mb-2  ">
@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           <button
-            className="border-2  mb-6  w-60 h-14  md:w-80 rounded-xl  sm:h-12 bg-primary-dark  hover:bg-primary-dark text-white  text-xl  md:text-xl transition"
+            className="mb-6  w-60 h-14  md:w-80 rounded-xl  sm:h-12 bg-primary-dark  hover:bg-primary-dark text-white  text-xl  transition"
             onClick={scrollToForm}
           >
             Investor Inquiries

@@ -18,7 +18,7 @@ const SideBar: React.FC<Props> = ({ scrollToForm }) => {
         onClick={toggleSidebar}
         aria-controls="default-sidebar"
         type="button"
-        className="inline-flex items-center p-2 mt-2 me-3 text-sm text-primary-dark rounded-lg sm:hidden  focus:outline-none focus:ring-2  dark:text-primary  "
+        className="inline-flex mt-2 items-center  text-sm text-primary-dark rounded-lg sm:hidden  focus:outline-none focus:ring-2  dark:text-primary  "
       >
         <span className="sr-only">Open sidebar</span>
         <svg
