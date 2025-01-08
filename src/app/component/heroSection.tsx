@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   return (
     <div
       id="heroSection"
-      className=" min-h-screen relative w-full lg:min-h-screen bg-primary-light px-10 sm:px-24 "
+      className={`bg-[url('/bg-img.webp')] bg-cover bg-center min-h-screen relative w-full lg:min-h-screen px-10 sm:px-24`}
     >
       {/* Logo Section */}
       <div className="flex flex-wrap justify-between items-center py-10 ">
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/Navis-logo.png"
             alt="Logo"
-            className="w-[200px] h-[70px] md:w-[250px] md:h-[80px]"
+            className="w-[250px]  md:w-[350px] "
           />
         </div>
 
@@ -47,12 +47,12 @@ const HeroSection: React.FC = () => {
       <div className=" text-4xl md:text-4xl justify-start  flex mt-32 md:mt-20 flex-wrap gap-10 items-center lg:justify-between ">
         {/* Content Section */}
         <div className="text-primary-dark order-2  lg:order-1 w-[300px]  md:w-[500px]  sm:ml-0  flex flex-col gap-14 md:gap-10 justify-center items-start ">
-          <div className="  font-semibold mb-2  ">
+          <div className="   mb-2  ">
             We are a global investment management firm.
           </div>
 
           <button
-            className="border-2  mb-6  w-60 h-14  md:w-80 rounded-xl font-bold  sm:h-12 bg-primary  hover:bg-primary-dark text-white  text-xl  md:text-xl transition"
+            className="border-2  mb-6  w-60 h-14  md:w-80 rounded-xl  sm:h-12 bg-primary-dark  hover:bg-primary-dark text-white  text-xl  md:text-xl transition"
             onClick={scrollToForm}
           >
             Investor Inquiries

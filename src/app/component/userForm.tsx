@@ -284,7 +284,7 @@ const UserForm: React.FC = () => {
             <div className="relative">
               <button
                 type="submit"
-                className="w-full mt-8 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark focus:ring-4"
+                className="w-full mt-8 py-2 rounded-lg bg-primary-dark text-white hover:bg-primary-dark focus:ring-4"
               >
                 {uploadFileLoading ? (
                   <div>
