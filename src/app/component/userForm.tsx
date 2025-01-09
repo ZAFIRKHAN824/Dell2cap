@@ -192,6 +192,9 @@ const UserForm: React.FC = () => {
                   backgroundSize: "1em",
                 }}
               >
+                <option disabled value="">
+                  Which type of investor are you?
+                </option>
                 <option value="Endowment / Foundation">
                   High-net-worth individual
                 </option>
@@ -205,9 +208,6 @@ const UserForm: React.FC = () => {
                 <option value="Multi-Family Office">Multi-Family Office</option>
                 <option value="Fund of Funds Manager">
                   Fund of Funds Manager
-                </option>
-                <option disabled value="">
-                  Which type of investor are you?
                 </option>
                 <option value="Outsourced CIO">Outsourced CIO</option>
                 <option value="Public Pension Fund">
