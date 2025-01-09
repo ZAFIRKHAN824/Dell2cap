@@ -31,31 +31,25 @@ const HeroSection: React.FC = () => {
             <SideBar scrollToForm={scrollToForm} />
           </div>
           <div className="hidden sm:block">
-            <a
-              className=" mr-2 sm:mr-14"
-              href="mailto:Contact@navisinvestmentgroup.com"
-            >
-              Contact{" "}
-            </a>
-            <span className="cursor-pointer" onClick={scrollToForm}>
-              Investor Inquiries{" "}
-            </span>
+            <a href="mailto:Contact@navisinvestmentgroup.com">Contact </a>
           </div>
         </div>
       </div>
 
-      <div className=" text-4xl  justify-start  flex mt-[20vh] flex-wrap gap-10 items-center lg:justify-between ">
+      <div className=" text-2xl  justify-start  flex mt-[20vh] flex-wrap gap-10 items-center lg:justify-between ">
         {/* Content Section */}
-        <div className="text-primary-dark order-2  lg:order-1 w-[300px]  md:w-[500px]  sm:ml-0  flex flex-col gap-14 md:gap-10 justify-center items-start ">
+        <div className="text-primary-dark order-2  lg:order-1 w-[400px]  md:w-[600px]  sm:ml-0  flex flex-col gap-14 md:gap-10 justify-center items-start ">
           <div className="   mb-2  ">
-            We are a global investment management firm.
+            We specialize in developing automated and algorithmic solutions to
+            trade global equity markets using artificial intelligence and
+            machine learning techniques
           </div>
 
           <button
             className="mb-6  w-60 h-14  md:w-80 rounded-xl  sm:h-12 bg-primary-dark  hover:bg-primary-dark text-white  text-xl  transition"
             onClick={scrollToForm}
           >
-            Investor Inquiries
+            Investor Questions
           </button>
         </div>
       </div>

@@ -81,12 +81,9 @@ const UserForm: React.FC = () => {
           >
             {/* Heading */}
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-primary-dark">
-                Inquiry Form
-              </h2>
               <p className="text-primary-dark">
-                If you are interested in learning more about Navis Investment
-                Group, please inquire here.
+                Please fill out the form below to learn more about Navis
+                Investment Group
               </p>
             </div>
             {/* Name Input */}
@@ -135,12 +132,12 @@ const UserForm: React.FC = () => {
                 htmlFor="number"
                 className="block text-sm font-semibold text-primary-dark"
               >
-                Number:
+                Phone Number:
               </label>
               <input
                 disabled={uploadFileLoading}
                 required
-                placeholder="Your Number"
+                placeholder="Your Phone Number"
                 type="text"
                 name="number"
                 id="number"
@@ -195,35 +192,39 @@ const UserForm: React.FC = () => {
                   backgroundSize: "1em",
                 }}
               >
-                <option disabled value="">
-                  Which type of investor are you?
-                </option>
-                <option value="Advisor / Consultant">
-                  Advisor / Consultant
+                <option value="Endowment / Foundation">
+                  High-net-worth individual
                 </option>
                 <option value="Endowment / Foundation">
                   Endowment / Foundation
                 </option>
+                <option value="Advisor / Consultant">
+                  Advisor / Consultant
+                </option>
+                <option value="Insurance Company">Insurance Company</option>
+                <option value="Multi-Family Office">Multi-Family Office</option>
                 <option value="Fund of Funds Manager">
                   Fund of Funds Manager
                 </option>
-                <option value="Insurance Company">Insurance Company</option>
+                <option disabled value="">
+                  Which type of investor are you?
+                </option>
                 <option value="Outsourced CIO">Outsourced CIO</option>
-                <option value="Multi-Family Office">Multi-Family Office</option>
-                <option value="Private Bank">Private Bank</option>
+                <option value="Public Pension Fund">
+                  Public Pension Fund
+                </option>{" "}
                 <option value="Private Sector Pension Fund">
-                  {" "}
                   Private Sector Pension Fund
                 </option>
-                <option value="Public Pension Fund">Public Pension Fund</option>
+                <option value="Private Bank">Private Bank</option>
+                <option value=" Superannuation Scheme">
+                  Superannuation Scheme
+                </option>
                 <option value="Single Family Office">
                   Single Family Office
                 </option>
                 <option value="Sovereign Wealth Fund">
                   Sovereign Wealth Fund
-                </option>
-                <option value=" Superannuation Scheme">
-                  Superannuation Scheme
                 </option>
               </select>
             </div>
@@ -256,12 +257,10 @@ const UserForm: React.FC = () => {
                 <option disabled value="">
                   Input your company AUM
                 </option>
-                <option value="<$1bn">$1bn</option>
-                <option value="$1-5bn">$1-5bn</option>
-                <option value="$5-10bn">$5-10bn</option>
-                <option value="$10-25bn">$10-25bn</option>
-                <option value="$25-100bn">$25-100bn</option>
-                <option value="$100bn+">$100bn+</option>
+                <option value="<$1bn"> {"<$100mm"}</option>
+                <option value="$1-5bn">$100mm - 1bln</option>
+                <option value="$5-10bn">$1 - 5bln</option>
+                <option value="$10-25bn">{"> 5bln"}</option>
               </select>
             </div>
             <div>

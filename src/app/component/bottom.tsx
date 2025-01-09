@@ -7,7 +7,6 @@ const Bottom: React.FC = () => {
         <div className="text-start ">
           <div className="px-10 sm:px-20 ">
             <div className="text-3xl mb-6"> Navis Investment Group</div>
-            <div className=" mb-2"> abc New York, NY 10022</div>
             <div>
               <a href="mailto:Contact@navisinvestmentgroup.com">
                 contact@navisinvestmentgroup.com
@@ -16,7 +15,7 @@ const Bottom: React.FC = () => {
 
             <div className="mt-6 ">
               <a
-                href="/terms-of-use.pdf"
+                href="/TermsOfUse_NavisInvestmentGroup.pdf"
                 className="text-white mr-3"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -25,7 +24,7 @@ const Bottom: React.FC = () => {
               </a>
               |
               <a
-                href="/privacy-policy.pdf"
+                href="/PrivacyPolicy_NavisInvestmentGroup.docx"
                 className="text-white mx-3"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -34,12 +33,21 @@ const Bottom: React.FC = () => {
               </a>
               |
               <a
-                href="/cpra-website-notice.pdf"
-                className="text-white ml-3"
+                href="/CPRA_NavisInvestmentGroup.pdf"
+                className="text-white mx-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 CPRA Notice
+              </a>
+              |
+              <a
+                href="/EEU_UK_PrivacyNotice_NavisInvestmentGroup.pdf"
+                className="text-white ml-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Notice for EEU and UK
               </a>
             </div>
             <div className="mt-2">

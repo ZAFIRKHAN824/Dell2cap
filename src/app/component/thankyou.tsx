@@ -6,20 +6,10 @@ const Thankyou: React.FC = () => {
     <div>
       <div className="bg-primary-dark flex items-center justify-center min-h-screen">
         <div className="bg-white shadow-lg rounded-lg p-8 max-w-md text-center">
-          <div className="flex flex-col justify-center items-center mb-4 gap-4">
-            <img
-              src="Navis-logo.png"
-              alt=""
-              className=" mt-3 h-[40px] w-[140px]"
-            />
-            <h1 className="- text-4xl mt-6 font-bold text-primary-dark mb-4">
-              Thank You!
-            </h1>
-          </div>
+          <div className="flex flex-col justify-center items-center mb-4 gap-4"></div>
 
           <p className="text-primary-dark mb-6">
-            Your submission has been received. We appreciate your effort and
-            will get back to you soon.
+            Your submission has been received. Thank you for your inquiry
           </p>
           <Link href="#heroSection">
             <button
