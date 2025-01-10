@@ -3,10 +3,17 @@ import React from "react";
 const Bottom: React.FC = () => {
   return (
     <div>
-      <footer className="font-sans bg-primary font-normal text-center text-sm text-white md:text-base py-10">
+      <footer className="font-sans text-primary bg-white font-normal text-center text-sm  md:text-base py-10">
         <div className="text-start ">
           <div className="px-10 sm:px-20 ">
-            <div className="text-3xl mb-6"> Navis Investment Group</div>
+            <div className="text-3xl mb-6">
+              {" "}
+              <img
+                src="/Navis-logo.png"
+                alt="Logo"
+                className="w-[150px]  md:w-[150px] lg:w-[250px]"
+              />
+            </div>
             <div>
               <a href="mailto:Contact@navisinvestmentgroup.com">
                 contact@navisinvestmentgroup.com
@@ -16,7 +23,7 @@ const Bottom: React.FC = () => {
             <div className="mt-6 ">
               <a
                 href="/TermsOfUse_NavisInvestmentGroup.pdf"
-                className="text-white mr-3"
+                className=" mr-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -25,7 +32,7 @@ const Bottom: React.FC = () => {
               |
               <a
                 href="/PrivacyPolicy_NavisInvestmentGroup.docx"
-                className="text-white mx-3"
+                className=" mx-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +41,7 @@ const Bottom: React.FC = () => {
               |
               <a
                 href="/CPRA_NavisInvestmentGroup.pdf"
-                className="text-white mx-3"
+                className=" mx-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,11 +50,11 @@ const Bottom: React.FC = () => {
               |
               <a
                 href="/EEU_UK_PrivacyNotice_NavisInvestmentGroup.pdf"
-                className="text-white ml-3"
+                className=" ml-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Privacy Notice for EEU and UK
+                Privacy Notice for EU and UK
               </a>
             </div>
             <div className="mt-2">
