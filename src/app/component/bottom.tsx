@@ -31,7 +31,7 @@ const Bottom: React.FC = () => {
               </a>
               |
               <a
-                href="/PrivacyPolicy_NavisInvestmentGroup.docx"
+                href="/PrivacyPolicy_NavisInvestmentGroup.pdf"
                 className=" mx-3"
                 target="_blank"
                 rel="noopener noreferrer"
