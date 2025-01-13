@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Navis Investment Group",
-  description: "We are a global investment management firm.",
+  description:
+    "We specialize in developing automated and algorithmic solutions to trade global equity markets using artificial intelligence and machine learning techniques",
   icons: "/small_log.png",
 };
 
