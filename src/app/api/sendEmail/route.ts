@@ -96,6 +96,7 @@ export async function POST(req: Request) {
     redirect: "follow",
     method: "POST",
     body: JSON.stringify([
+      rawBody.timeStamp,
       rawBody.name,
       rawBody.email,
       rawBody.number,

@@ -11,11 +11,25 @@ interface FieldData {
   investorType: string;
   companyAum: string;
   captcha: string;
+  timeStamp: string;
 }
 
 const UserForm: React.FC = () => {
   const [isSubmiited, setisSubmiited] = useState(false);
   const [uploadFileLoading, setUploadFileLoading] = useState(false);
+  const getCurrentTimestamp = () => {
+    const date = new Date();
+    return (
+      `${date.getFullYear()}-${(date.getMonth() + 1)
+        .toString()
+        .padStart(2, "0")}-${date.getDate().toString().padStart(2, "0")} ` +
+      `${date.getHours().toString().padStart(2, "0")}:${date
+        .getMinutes()
+        .toString()
+        .padStart(2, "0")}:${date.getSeconds().toString().padStart(2, "0")}`
+    );
+  };
+
   const [fieldData, setFieldData] = useState<FieldData>({
     name: "",
     email: "",
@@ -24,6 +38,7 @@ const UserForm: React.FC = () => {
     investorType: "",
     companyAum: "",
     captcha: "",
+    timeStamp: getCurrentTimestamp(),
   });
 
   const handleChange = useCallback(
@@ -60,6 +75,7 @@ const UserForm: React.FC = () => {
           investorType: "",
           companyAum: "",
           captcha: "",
+          timeStamp: "",
         });
       });
     } catch (error) {
