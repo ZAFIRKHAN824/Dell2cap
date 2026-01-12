@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/Navis-logo.png"
             alt="Logo"
-            className="w-[200px]  md:w-[300px] lg:w-[350px]"
+            className="w-[100px]  md:w-[200px] lg:w-[250px]"
           />
         </div>
 
@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
             <SideBar scrollToForm={scrollToForm} />
           </div>
           <div className="hidden sm:block">
-            <a href="mailto:Contact@navisinvestmentgroup.com">Contact </a>
+            <a href="mailto:ir@del2cap.com">Contact </a>
           </div>
         </div>
       </div>

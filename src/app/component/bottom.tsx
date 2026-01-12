@@ -15,9 +15,7 @@ const Bottom: React.FC = () => {
               />
             </div>
             <div>
-              <a href="mailto:Contact@navisinvestmentgroup.com">
-                contact@navisinvestmentgroup.com
-              </a>
+              <a href="mailto:ir@del2cap.com">ir@del2cap.com</a>
             </div>
 
             <div className="mt-6 ">
@@ -58,7 +56,7 @@ const Bottom: React.FC = () => {
               </a>
             </div>
             <div className="mt-2">
-              Copyright © Dell2cap LLC {new Date().getFullYear()} | All rights
+              Copyright © Del2cap LLC {new Date().getFullYear()} | All rights
               reserved.
             </div>
           </div>
