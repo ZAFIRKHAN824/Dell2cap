@@ -11,7 +11,7 @@ const Bottom: React.FC = () => {
               <img
                 src="/Navis-logo.png"
                 alt="Logo"
-                className="w-[150px]  md:w-[150px] lg:w-[250px]"
+                className="w-[150px]  md:w-[150px] lg:w-[250px] "
               />
             </div>
             <div>
