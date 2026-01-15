@@ -22,7 +22,7 @@ const send = async ({
   to,
   toName,
   from = "Contact@navisinvestmentgroup.com",
-  fromName = "Del2cap",
+  fromName = "Del2 Cap",
   subject,
   template,
   text,

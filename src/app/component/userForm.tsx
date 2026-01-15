@@ -98,7 +98,7 @@ const UserForm: React.FC = () => {
             {/* Heading */}
             <div className="text-center mb-8">
               <p className="text-primary-dark">
-                Please fill out the form below to learn more about Del2cap
+                Please fill out the form below to learn more about Del2 Cap
               </p>
             </div>
             {/* Name Input */}
