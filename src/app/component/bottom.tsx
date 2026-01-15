@@ -56,7 +56,7 @@ const Bottom: React.FC = () => {
               </a>
             </div>
             <div className="mt-2">
-              Copyright © Del2 Cap LLC {new Date().getFullYear()} | All rights
+              Copyright © DEL2 Cap LLC {new Date().getFullYear()} | All rights
               reserved.
             </div>
           </div>
