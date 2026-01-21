@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <img
             src="/Navis-logo.png"
             alt="Logo"
-            className="w-[100px]  md:w-[200px] lg:w-[250px]"
+            className="w-[120px]  md:w-[200px] lg:w-[280px]"
           />
         </div>
 
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className=" text-2xl  justify-start  flex mt-[20vh] flex-wrap gap-10 items-center lg:justify-between ">
+      <div className=" text-2xl  justify-start  flex mt-[11vh] flex-wrap gap-10 items-center lg:justify-between ">
         {/* Content Section */}
         <div className="text-primary-dark font-extrabold order-2  lg:order-1 w-[400px]  md:w-[600px]  sm:ml-0  flex flex-col gap-14 md:gap-10 justify-center items-start ">
           <div className="   mb-2  ">
