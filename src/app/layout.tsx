@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DEL2 Cap",
+  title: "Del2 Capital",
   description:
     "We specialize in developing automated and algorithmic solutions to trade global equity markets using artificial intelligence and machine learning techniques",
   icons: "/small_log.png",

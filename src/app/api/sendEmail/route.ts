@@ -12,7 +12,7 @@ const apiInstance = () => {
     (_apiInstance as SibApiV3Sdk.TransactionalEmailsApi).setApiKey(
       SibApiV3Sdk.TransactionalSMSApiApiKeys
         .apiKey as unknown as SibApiV3Sdk.TransactionalEmailsApiApiKeys,
-      process.env.BREVO_API_KEY!
+      process.env.BREVO_API_KEY!,
     );
   }
   return _apiInstance;
@@ -22,7 +22,7 @@ const send = async ({
   to,
   toName,
   from = "Contact@navisinvestmentgroup.com",
-  fromName = "DEL2 Cap",
+  fromName = "Del2 Capital",
   subject,
   template,
   text,
@@ -79,7 +79,7 @@ export async function POST(req: Request) {
     process.env.HCAPTCHA_SECRET!,
     rawBody.captcha,
     getIp(req),
-    process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!
+    process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!,
   );
 
   if (verified.success) {
@@ -88,7 +88,7 @@ export async function POST(req: Request) {
     console.log("captcha verification failed");
     return NextResponse.json(
       { message: "Captcha verification failed" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -120,6 +120,6 @@ export async function POST(req: Request) {
       headers: {
         "Content-Type": "application/json",
       },
-    }
+    },
   );
 }
